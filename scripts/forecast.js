@@ -1,5 +1,5 @@
-
-const key = '95UcSEjYQGif6xGvtvSCkvrSNDDi9TBu';    //api key from accu-weather
+//api key from accu-weather
+const key = '95UcSEjYQGif6xGvtvSCkvrSNDDi9TBu';    
 
 //get weather information
 const getWeather = async (id) =>{
