@@ -1,4 +1,5 @@
-const cityForm = document.querySelector('form');  //capture data from the form
+//capture data from the form
+const cityForm = document.querySelector('form');  
 const card = document.querySelector('.card');
 const details = document.querySelector('.details');
 const time = document.querySelector('img.time');
@@ -22,18 +23,19 @@ const updateUI = (data) => {
     `;
 
     //update icon images
-
     const iconsrc = `img/icons/${weather.WeatherIcon}.svg`;
     icon.setAttribute('src', iconsrc);
 
-    // update might/day images
+    // update night/day images
     let timesrc = null;
     if(weather.IsDayTime){
         timesrc = 'img/day.svg';
     }else{
         timesrc = 'img/night.svg';
     }
-    time.setAttribute('src', timesrc);   //change the card image to day or night
+    //change the card image to day or night
+    
+    time.setAttribute('src', timesrc);   
     //remove the d-none class if present
     if(card.classList.contains('d-none')){
         card.classList.remove('d-none');
