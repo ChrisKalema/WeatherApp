@@ -26,8 +26,4 @@ const getCity = async (city) =>{
 
     return data[0];   //return the first city
 };
-
-// getCity('New York')
-//     .then(data => {return getWeather(data.Key);})       //use the getWeather method to get the City Key
-//     .then(data =>{console.log(data);})
-//     .catch(error => console.log(error));              
+         
